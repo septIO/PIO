@@ -1,0 +1,27 @@
+﻿<!DOCTYPE html>
+<html ng-app="app">
+<head>
+    <title></title>
+    <meta charset="utf-8" />
+    <link rel="stylesheet" href="main.css" />
+    <script src="/socket.io/socket.io.js"></script>
+    <script src="jQuery.js"></script>
+    <script src="underscore.js"></script>
+    <script src="angular.min.js"></script>
+    <script src="color.js"></script>
+    <script src="utilities.js"></script>
+    <script src="settings.js"></script>
+    <script src="postit.js"></script>
+    <script src="main.js"></script>
+</head>
+<body ng-controller="mainController">
+
+    <button> Add </button>
+
+    <div class="postit-container" ng-repeat="postit in postits">
+        {{postit}}
+    </div>
+
+
+</body>
+</html>
